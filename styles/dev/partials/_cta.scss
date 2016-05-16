@@ -1,0 +1,39 @@
+.cta {
+    @include center;
+
+    &__row {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-family: $titleFont;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        color: $regentGrey;
+        margin: $gridGap 0;
+    }
+
+
+
+    &__button {
+        font-size: 0.8rem;
+        color: $apricot;
+        border: 1px solid $apricot;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: $gridGap/2 $gridGap;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: $apricot;
+            color: $white;
+        }
+    }
+}

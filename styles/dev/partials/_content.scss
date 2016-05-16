@@ -5,9 +5,4 @@
     &--shrink {
         margin-top: 60px + $gridGap;
     }
-
-    &__row {
-        display: flex;
-        flex-flow: row nowrap;
-    }
 }

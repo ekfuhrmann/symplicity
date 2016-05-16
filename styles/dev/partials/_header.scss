@@ -15,8 +15,7 @@
   }
 
   &__container {
-    max-width: 1200px;
-    margin: 0 auto;
+    @include center;
     padding: 0 $gridGap;
     display: flex;
     flex-flow: row nowrap;
@@ -30,7 +29,7 @@
     transition: 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-family: $headerFont;
+    font-family: $titleFont;
   }
 
   &__link {

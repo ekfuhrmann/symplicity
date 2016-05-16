@@ -1,0 +1,20 @@
+// Modules and Variables
+@import "modules/variables";
+@import "modules/mixins";
+
+//Partials
+@import "partials/reset";
+@import "partials/header";
+@import "partials/content";
+@import "partials/hero";
+@import "partials/cta";
+
+// Third-Party
+
+
+body {
+    font-family: $primaryFont;
+    color: $emperor;
+    font-size: 16px;
+    min-height: 1200px; // DELETE LATER
+}
