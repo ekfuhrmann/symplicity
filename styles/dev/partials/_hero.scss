@@ -1,17 +1,25 @@
 .hero {
     width: 100%;
-    height: 600px;
 
     &__container {
         @include center;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
+        border: 1px solid $white;
     }
 
     &__column {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-flow: column wrap;
+
+        @include media(">phone", "<=tablet") {
+            width: 100%;
+        }
+
+        @include media(">tablet") {
+            width: 50%;
+        }
     }
 
     &__row {
@@ -21,15 +29,22 @@
 
     &__block {
         height: 200px;
-        width: 50%;
+        width: 100%;
         background: $apricot;
-        border: 2px solid $white;
+        border: 1px solid $white;
         box-sizing: border-box;
+
+        @include media(">phone") {
+            width: 50%;
+        }
 
         &--large {
             @extend .hero__block;
-            height: 400px;
             width: 100%;
+
+            @include media(">phone") {
+                height: 400px;
+            }
         }
 
         &--medium {

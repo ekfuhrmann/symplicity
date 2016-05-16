@@ -1,0 +1,27 @@
+.article {
+    background: $wildSand;
+    min-height: 400px;
+
+    &__header {
+        height: 60px;
+        box-sizing: border-box;
+        border-top: 1px solid $emperor;
+        border-bottom: 1px solid $emperor;
+        background: $white;
+
+        &_container {
+            @include center;
+            height: 100%;
+            padding: 0 $gridGap;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_title {
+            font-family: $titleFont;
+            font-size: 1.3rem;
+        }
+    }
+}

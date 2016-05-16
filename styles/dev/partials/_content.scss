@@ -1,5 +1,10 @@
 .content {
-    margin-top: 230px + $gridGap; // Account for Header Size
+    margin-top: 160px;
+
+    @include media(">=desktop") {
+        margin-top: 230px + $gridGap;
+    }
+
 
     // Resizing on scroll
     &--shrink {

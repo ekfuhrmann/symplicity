@@ -2,7 +2,7 @@ var animateHeader = (function() {
   var docElem = document.documentElement,
     header = document.querySelector( '.header' ),
     didScroll = false,
-    changeHeaderOn = 190;
+    changeHeaderOn = 170;
 
   function init() {
     window.addEventListener( 'scroll', function () {
