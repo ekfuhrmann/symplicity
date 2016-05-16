@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $emperor;
+  height: 230px;
+  color: $white;
+  z-index: 10000;
+  overflow: hidden;
+  transition: 0.3s ease;
+
+  &--shrink {
+    height: 60px;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $gridGap;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 42px;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+    margin: 0 $gridGap/2;
+  }
+}
