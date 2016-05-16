@@ -8,7 +8,7 @@
   color: $white;
   z-index: 10000;
   overflow: hidden;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 
   &--shrink {
     height: 60px;
@@ -30,11 +30,16 @@
     transition: 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 4px;
+    font-family: $headerFont;
   }
 
   &__link {
     color: $white;
     text-decoration: none;
     margin: 0 $gridGap/2;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
   }
 }

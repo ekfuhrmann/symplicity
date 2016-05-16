@@ -1,16 +1,13 @@
 @import "reset";
 @import "variables";
 @import "header";
+@import "content";
 @import "hero";
 
 body {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: $font-primary;
+    font-family: $primaryFont;
     font-size: 16px;
     min-height: 1200px; // DELETE LATER
-}
-
-.content {
-    margin-top: 230px + $gridGap;// Account for Header Size
 }

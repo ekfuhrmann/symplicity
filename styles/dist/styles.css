@@ -51,8 +51,8 @@ table {
   color: #FEFEFE;
   z-index: 10000;
   overflow: hidden;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease; }
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease; }
   .header--shrink {
     height: 60px; }
   .header__container {
@@ -80,11 +80,19 @@ table {
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    font-family: "Raleway", sans-serif; }
   .header__link {
     color: #FEFEFE;
     text-decoration: none;
     margin: 0 10px; }
+    .header__link:last-of-type {
+      margin-right: 0; }
+
+.content {
+  margin-top: 250px; }
+  .content--shrink {
+    margin-top: 80px; }
 
 .hero {
   width: 100%;
@@ -129,9 +137,6 @@ table {
 body {
   max-width: 1200px;
   margin: 0 auto;
-  font-family: "Raleway", "Verdana", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   min-height: 1200px; }
-
-.content {
-  margin-top: 250px; }

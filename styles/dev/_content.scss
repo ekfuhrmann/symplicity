@@ -1,0 +1,13 @@
+.content {
+    margin-top: 230px + $gridGap; // Account for Header Size
+
+    // Resizing on scroll
+    &--shrink {
+        margin-top: 60px + $gridGap;
+    }
+
+    &__row {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
