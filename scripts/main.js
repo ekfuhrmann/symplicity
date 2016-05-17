@@ -30,3 +30,11 @@ var animateHeader = (function() {
   init();
 
 })();
+
+function toggleMenu() {
+    var menuBtn = document.querySelector( '.header__nav_icon' );
+    var menu = document.querySelector( '.header__nav_container' );
+
+    menuBtn.classList.toggle( 'active' );
+    menu.classList.toggle( 'active' );
+};

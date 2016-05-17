@@ -12,11 +12,14 @@
         <header class="header">
             <div class="header__container">
                 <h1 class="header__title">Symplicity</h1>
-                <nav>
-                  <a class="header__link" href="#" onclick="return false;">Broccoli</a>
-                  <a class="header__link" href="#" onclick="return false;">Almonds</a>
-                  <a class="header__link" href="#" onclick="return false;">Pears</a>
-                  <a class="header__link" href="#" onclick="return false;">Oranges</a>
+                <nav class="header__nav">
+                    <div class="header__nav_container">
+                        <a class="header__nav_link" href="#" onclick="return false;">Broccoli</a>
+                        <a class="header__nav_link" href="#" onclick="return false;">Almonds</a>
+                        <a class="header__nav_link" href="#" onclick="return false;">Pears</a>
+                        <a class="header__nav_link" href="#" onclick="return false;">Oranges</a>
+                    </div>
+                    <a href="javascript:void(0);" class="header__nav_icon" onclick="toggleMenu()">☰</a>
                 </nav>
               </div>
         </header>
@@ -46,12 +49,12 @@
                     <h1 class="cta__title">
                         Welcome to Symplicity, a free website template.
                     </h1>
-                    <a href="#" class="cta__button" onclick="return false;">
-                        Click For More
-                    </a>
                     <h2 class="cta__subtitle">
-                        Symplicity is a <em>FREE</em>, HTML5/CSS3 template by Eric Fuhrmann, available to view and download at GitHub.
+                        Symplicity is a <span class="cta__emphasis">FREE</span>, HTML5/CSS3 template by Eric Fuhrmann, available to view and download at GitHub.
                     </h2>
+                    <a href="https://github.com/ekfuhrmann/symplicity/" target="_blank" class="cta__button">
+                        Click For Source
+                    </a>
                 </div>
             </section>
             <section class="article">
