@@ -179,8 +179,7 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center;
-    min-height: 200px; }
+            align-items: center; }
   .cta__column {
     display: -webkit-box;
     display: -webkit-flex;
@@ -200,24 +199,28 @@ a {
   .cta__title {
     font-size: 1.5rem;
     font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    text-align: center; }
-  .cta__subtitle {
-    color: #7A888D;
-    margin: 20px 0;
+    line-height: 1.7rem;
     text-align: center; }
   .cta__button {
-    font-size: 0.8rem;
     color: #EE8D80;
     border: 1px solid #EE8D80;
     box-sizing: border-box;
     border-radius: 6px;
+    margin-top: 20px;
     padding: 10px 20px;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease; }
     .cta__button:hover {
       background: #EE8D80;
       color: #FEFEFE; }
+  .cta__subtitle {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #7A888D;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 20px 0;
+    border-top: 1px solid #D3D8D3; }
 
 .article {
   background: #EFEBE3;
