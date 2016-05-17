@@ -5,9 +5,14 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 
+var sassOptions = {
+    errLogToConsole: true,
+    outputStyle: 'expanded',
+};
+
 gulp.task('sass', function () {
     gulp.src('./styles/dev/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(autoprefixer())
         .pipe(gulp.dest('./styles/dist/'))
