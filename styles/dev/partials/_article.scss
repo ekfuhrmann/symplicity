@@ -21,7 +21,82 @@
 
         &_title {
             font-family: $titleFont;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__container {
+        @include center;
+        height: auto;
+        padding: $gridGap;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 100%;
+        background: $white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: $gridGap;
+        box-sizing: border-box;
+        margin-bottom: $gridGap;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include media('>=tablet') {
+            width: calc(50% - #{$gridGap/2});
+        }
+
+        &_image {
+            width: 50%;
+            padding-bottom: 50%;
+            border-radius: 50%;
+            background: $apricot;
+            margin-bottom: $gridGap;
+        }
+
+        &_title {
+            font-family: $titleFont;
+            font-size: 1.4rem;
+            margin-bottom: $gridGap*1.5;
+            flex: 100%;
+
+            &:hover {
+                color: $apricot;
+            }
+        }
+
+        &_date {
+            font-family: $primaryFont;
+            font-size: 0.9em;
+            font-style: italic;
+            flex: 100%;
+            margin-bottom: $gridGap;
+        }
+
+        &_text {
+            font-family: $primaryFont;
+            font-size: 0.8em;
+            flex: 100%;
+            line-height: 1.5em;
+
+            &::after {
+                content: 'Read More >';
+                display: block;
+                font-family: $titleFont;
+                margin-top: $gridGap;
+                font-size: 1.2em;
+                font-weight: 600;
+
+                &:hover {
+                    color: $apricot;
+                }
+            }
         }
     }
 }

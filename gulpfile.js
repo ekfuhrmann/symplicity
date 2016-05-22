@@ -21,7 +21,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./styles/dist/'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 gulp.task('browserSync', function() {
@@ -29,7 +29,7 @@ gulp.task('browserSync', function() {
         server: {
             baseDir: './'
         },
-    })
+    });
 });
 
 gulp.task('watch', ['browserSync', 'sass'], function() {
